@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+body{
+    background-color: white;
+}
+.nav a:hover {
+  color: rgb(223, 47, 74);
+}
