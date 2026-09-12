@@ -1,7 +1,11 @@
 import type { DataType } from "./type/DataType"
 import starImg from '../assets/star.png'
 
-export const AvCards = ({ data }: {data: DataType}) => {
+export const AvCards = ({ data,
+                          addToStack
+ }: {data: DataType
+      addToStack : (data: DataType)=> void;
+ }) => {
     
     return ( 
     <div className="EachCard  py-[30px] px-[20px] rounded-[10px] my-[15px]  p-[10px] flex flex-col border border-slate-100 gap-5 text-black"  >
@@ -30,7 +34,8 @@ export const AvCards = ({ data }: {data: DataType}) => {
   </div>
   </div>
   
-      <button className=" bg-black text-white py-2 rounded-[10px]">Add to Stack</button>
+      <button className=" bg-black text-white py-2 rounded-[10px]"
+                onClick={()=> addToStack(data)}>Add to Stack</button>
       </div>
     </div>)
 }
