@@ -1,8 +1,8 @@
 import logoImg from "../assets/logo-text.png"
 export function Nav(){
     return(
-       <>
-<div className="nav sticky top-0 z-50 pt-5 w-[85%] flex justify-between m-auto text-black">            <img src={logoImg} alt="" />
+       <div className="sticky top-0 bg-white">
+<div className="nav   pt-5 w-[85%] flex justify-between m-auto text-black">            <img src={logoImg} alt="" />
         <div className="anc  flex gap-9">
             <a href="">Home</a>
             <a href="">Technologies</a>
@@ -22,6 +22,6 @@ export function Nav(){
 
        </div>
        
-       </>
+       </div>
     )
 }
