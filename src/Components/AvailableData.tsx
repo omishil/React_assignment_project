@@ -2,7 +2,7 @@ import type { DataType } from "./type/DataType"
 import { AvCards } from "./AvailableCards"
 import { useState } from "react"
 import { YourStack } from "./YourStack"
-
+import { toast } from "react-toastify"
 export function AvailableDatas({Alldata}:{Alldata: DataType[]}){
 const [stack, Setstack] = useState<DataType[]>([])
 
@@ -10,12 +10,17 @@ const [stack, Setstack] = useState<DataType[]>([])
 function addToStack(data: DataType){
 const alreadyAdded= stack.find((i)=> i.id === data.id )
 
-if(alreadyAdded){
-    Setstack(stack.filter((i)=> i.id!== data.id))
 
+if(alreadyAdded){
+    return
 }
+// if(alreadyAdded){
+//     Setstack(stack.filter((i)=> i.id!== data.id))
+
+// }
 else {
     Setstack([...stack,data])
+    toast.success(`${data.name} added to your stack`)
 }
 
 
@@ -40,6 +45,7 @@ return(
             key={data.id} 
             data={data}
             addToStack= {addToStack}
+            stack={stack}
             ></AvCards>
     
 )

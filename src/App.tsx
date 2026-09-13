@@ -3,7 +3,9 @@ import Banner from "./Components/banner"
 import { Suspense } from "react"
 import Data from "./Components/Data"
 import type { DataType } from "./Components/type/DataType"
-
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
+import { Footer } from "./Components/footer"
 
 async function  DataPromise(): Promise<DataType[]>{
   const res= await fetch("/data.json")
@@ -22,6 +24,8 @@ function App() {
      <Data data={DataPromise()}></Data> 
      
      </Suspense>
+     <ToastContainer position="bottom-right"></ToastContainer>
+     <Footer></Footer>
     </>
   )
 }
