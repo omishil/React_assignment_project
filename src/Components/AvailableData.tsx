@@ -12,6 +12,7 @@ const alreadyAdded= stack.find((i)=> i.id === data.id )
 
 
 if(alreadyAdded){
+    toast.warning(`${data.name} is already in the stack`)
     return
 }
 // if(alreadyAdded){
@@ -28,10 +29,12 @@ else {
 
 function removeFromStack(id: string){
     Setstack(stack.filter((data)=>data.id !==id))
+    toast.info(`Technology removed from the stack`)
 }
 
 function removeAll(){
     Setstack([])
+    toast.success("All technologies removed from the stack")
 }
 return(
 <div>
