@@ -47,7 +47,7 @@ export function YourStack({stack, removeFromStack,removeAll}:
 
 <button 
 onClick={removeAll}
-className="border border w-full mt-7 rounded-[5px] text-red-500">Remove All</button>
+className={`border border w-full mt-7 rounded-[5px] text-red-500 ${stack.length==0?"hidden":""}`} >Remove All</button>
 </div>
 
     )

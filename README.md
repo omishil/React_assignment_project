@@ -4,6 +4,15 @@ Dev Stack App
 ## Description
 Dev Stack App is a simple React website that helps developers explore different technologies and build their own development stack. Users can browse technologies by category, add their preferred technologies to their stack, and easily manage their selections.
 
+## Technologies that i used
+React,
+Typescript,
+Tailwind CSS,
+DaisyUI,
+React Toastify,
+JSON,
+Vite
+
 ## Features
 1.Browse technologies with their category, description, rating, and difficulty.
 

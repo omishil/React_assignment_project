@@ -21,7 +21,7 @@ if(alreadyAdded){
 // }
 else {
     Setstack([...stack,data])
-    toast.success(`${data.name} added to your stack`)
+    toast.success(` ${data.name} added to your stack`)
 }
 
 

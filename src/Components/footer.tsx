@@ -9,9 +9,9 @@ export function Footer(){
 <img src={logo} alt=""  className="w-[130px]"/>
 <p className="text-gray-500">Curated toools technologies and resourses for developers building modern software
     </p><div className="anc flex gap-2 text-gray-700">
-    <a href="">GitHub</a>
-    <a href="">Twitter</a>
-    <a href="">LinkedIn</a>
+    <a href="https://github.com">GitHub</a>
+    <a href="https://twitter.com">Twitter</a>
+    <a href="https://www.linkedin.com">LinkedIn</a>
 </div>
 </div>
 <div className="col flex flex-col gap-5">
