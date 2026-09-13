@@ -17,6 +17,10 @@ export function Nav(){
 <button className="bg-pink-600 text-white rounded-[12px] px-[12px] ">
   Sign out
 </button>        </div>
+
+
+
+
        </div>
        
        
